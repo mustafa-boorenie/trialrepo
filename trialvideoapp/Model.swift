@@ -32,6 +32,28 @@ class Model {
                 print("Error in initiating Data Task")
                 return
             }
+            
+            do {
+                //captures JSONDecoder object as constant decoder
+            
+            let decoder = JSONDecoder()
+                
+                //stores decoder response try to decode data (! = may or may not exist) from dataTask, stores type as response.
+            
+            let response = try decoder.decode(Response.self, from: data!)
+            
+                dump(response)
+            }
+            
+            
+            
+            
+            catch {
+                
+            //catches error here
+                
+            }
+            
         }
      
         //MARK: ACTIONS

@@ -16,6 +16,7 @@
 		450DCB7025729A1C00C551DE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DCB6F25729A1C00C551DE /* Constants.swift */; };
 		450DCB7325729BAF00C551DE /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DCB7225729BAF00C551DE /* Video.swift */; };
 		450DCB7625729C2500C551DE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DCB7525729C2500C551DE /* Model.swift */; };
+		450DCB792572CB9E00C551DE /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DCB782572CB9E00C551DE /* Response.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		450DCB6F25729A1C00C551DE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		450DCB7225729BAF00C551DE /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		450DCB7525729C2500C551DE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		450DCB782572CB9E00C551DE /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				450DCB6F25729A1C00C551DE /* Constants.swift */,
 				450DCB7225729BAF00C551DE /* Video.swift */,
 				450DCB7525729C2500C551DE /* Model.swift */,
+				450DCB782572CB9E00C551DE /* Response.swift */,
 			);
 			path = trialvideoapp;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				450DCB7625729C2500C551DE /* Model.swift in Sources */,
 				450DCB7025729A1C00C551DE /* Constants.swift in Sources */,
 				450DCB7325729BAF00C551DE /* Video.swift in Sources */,
+				450DCB792572CB9E00C551DE /* Response.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
