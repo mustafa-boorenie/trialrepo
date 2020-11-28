@@ -13,6 +13,9 @@
 		450DCB6225728F4800C551DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 450DCB6025728F4800C551DE /* Main.storyboard */; };
 		450DCB6425728F4B00C551DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 450DCB6325728F4B00C551DE /* Assets.xcassets */; };
 		450DCB6725728F4B00C551DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 450DCB6525728F4B00C551DE /* LaunchScreen.storyboard */; };
+		450DCB7025729A1C00C551DE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DCB6F25729A1C00C551DE /* Constants.swift */; };
+		450DCB7325729BAF00C551DE /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DCB7225729BAF00C551DE /* Video.swift */; };
+		450DCB7625729C2500C551DE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DCB7525729C2500C551DE /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		450DCB6325728F4B00C551DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		450DCB6625728F4B00C551DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		450DCB6825728F4B00C551DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		450DCB6F25729A1C00C551DE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		450DCB7225729BAF00C551DE /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		450DCB7525729C2500C551DE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				450DCB6325728F4B00C551DE /* Assets.xcassets */,
 				450DCB6525728F4B00C551DE /* LaunchScreen.storyboard */,
 				450DCB6825728F4B00C551DE /* Info.plist */,
+				450DCB6F25729A1C00C551DE /* Constants.swift */,
+				450DCB7225729BAF00C551DE /* Video.swift */,
+				450DCB7525729C2500C551DE /* Model.swift */,
 			);
 			path = trialvideoapp;
 			sourceTree = "<group>";
@@ -140,6 +149,9 @@
 				450DCB5F25728F4800C551DE /* ViewController.swift in Sources */,
 				450DCB5B25728F4800C551DE /* AppDelegate.swift in Sources */,
 				450DCB5D25728F4800C551DE /* SceneDelegate.swift in Sources */,
+				450DCB7625729C2500C551DE /* Model.swift in Sources */,
+				450DCB7025729A1C00C551DE /* Constants.swift in Sources */,
+				450DCB7325729BAF00C551DE /* Video.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
