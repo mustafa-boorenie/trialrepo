@@ -1,9 +1,3 @@
-//
-//  AppDelegate.swift
-//  trialvideoapp
-//
-//  Created by Mustafa Boorenie on 28/11/2020.
-//
 
 import UIKit
 
