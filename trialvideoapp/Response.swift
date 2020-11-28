@@ -3,6 +3,7 @@ import Foundation
 
 struct Response: Decodable {
     
+    //establishes items as a array of video
     var items: [Video]?
     
     enum CodingKeys : String, CodingKey {
@@ -17,6 +18,7 @@ struct Response: Decodable {
         
         //opens JSON object
         let container = try decoder.container(keyedBy: CodingKeys.self)
+        
         //decodes items container inside initial container into Video Arrays
         self.items = try container.decode([Video].self, forKey: .items)
         
