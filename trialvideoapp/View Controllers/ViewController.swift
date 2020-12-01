@@ -4,6 +4,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, ModelDelegate {
    
     //MARK: Properties
+    
     var model = Model()
     var videos = [Video]()
     
@@ -48,15 +49,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         //constant cell established as reusable cell identified a VIDEOCELL_ID in Constants struct
-        let cell = tableview.dequeueReusableCell(withIdentifier: Constants.VIDEOCELL_ID, for: indexPath)
+        let cell = tableview.dequeueReusableCell(withIdentifier: Constants.VIDEOCELL_ID, for: indexPath) as! TableViewCell
     
-        //configure cell
-        let title = self.videos[indexPath.row].title
-        cell.textLabel!.text = title
+        //takes video  from self with index value of row
+        let video = self.videos[indexPath.row]
         
+        //configures cell
+        cell.setCell(video)
         //return cell
         return cell
     }
+    
+    //MARK:Actions
+    
     
 
 }
