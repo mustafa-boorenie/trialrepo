@@ -27,7 +27,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="303"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UXE-T7-Swi">
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UXE-T7-Swi">
                                                     <rect key="frame" x="10" y="10" width="394" height="283"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ClV-77-Asq">
@@ -36,18 +36,14 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="ClV-77-Asq" secondAttribute="height" multiplier="1280:720" id="2Op-6S-KaJ"/>
                                                             </constraints>
-                                                            <connections>
-                                                                <outletCollection property="gestureRecognizers" destination="Oxe-d0-PZ8" appends="YES" id="VgS-gn-pWf"/>
-                                                                <outletCollection property="gestureRecognizers" destination="Oxe-d0-PZ8" appends="YES" id="koM-hy-Y3E"/>
-                                                            </connections>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="33S-r3-eHR">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="33S-r3-eHR">
                                                             <rect key="frame" x="0.0" y="231.5" width="394" height="21"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfe-gL-SbL">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfe-gL-SbL">
                                                             <rect key="frame" x="0.0" y="262.5" width="394" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -58,7 +54,6 @@
                                                         <constraint firstAttribute="trailing" secondItem="nfe-gL-SbL" secondAttribute="trailing" id="LWR-Gv-yV0"/>
                                                         <constraint firstItem="nfe-gL-SbL" firstAttribute="leading" secondItem="UXE-T7-Swi" secondAttribute="leading" id="qLZ-Ka-WHS"/>
                                                         <constraint firstAttribute="trailing" secondItem="33S-r3-eHR" secondAttribute="trailing" id="wFE-nd-xrc"/>
-                                                        <constraint firstItem="33S-r3-eHR" firstAttribute="leading" secondItem="UXE-T7-Swi" secondAttribute="leading" id="x8o-ZS-2Se"/>
                                                     </constraints>
                                                 </stackView>
                                             </subviews>
@@ -73,6 +68,7 @@
                                             <outlet property="publishedAt_label" destination="nfe-gL-SbL" id="Sjr-Af-dGu"/>
                                             <outlet property="thumbnail_imageView" destination="ClV-77-Asq" id="S2V-X7-yJX"/>
                                             <outlet property="title_label" destination="33S-r3-eHR" id="UjD-8K-IcS"/>
+                                            <segue destination="ohy-op-geD" kind="show" id="LxU-Mc-W86"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -92,13 +88,68 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="Oxe-d0-PZ8">
-                    <connections>
-                        <action selector="pressedthumbnail:" destination="BYZ-38-t0r" id="vRm-2J-dgu"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-197.10144927536234" y="87.723214285714278"/>
+        </scene>
+        <!--Video View Controller-->
+        <scene sceneID="YtK-B9-k2M">
+            <objects>
+                <viewController id="ohy-op-geD" customClass="VideoViewController" customModule="trialvideoapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GQj-Ef-LNm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="kyF-by-zxT">
+                                <rect key="frame" x="20" y="50" width="374" height="738"/>
+                                <subviews>
+                                    <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JBH-Yw-eny">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="210.5"/>
+                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="JBH-Yw-eny" secondAttribute="height" multiplier="1280:720" id="Dv6-Uc-aUT"/>
+                                        </constraints>
+                                        <wkWebViewConfiguration key="configuration">
+                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                            <wkPreferences key="preferences"/>
+                                        </wkWebViewConfiguration>
+                                    </wkWebView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qqg-NJ-O9m">
+                                        <rect key="frame" x="0.0" y="230.5" width="374" height="52"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" verticalCompressionResistancePriority="250" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9iA-Wz-Bct">
+                                        <rect key="frame" x="0.0" y="302.5" width="374" height="435.5"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" none="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sXs-T2-2kc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kyF-by-zxT" firstAttribute="top" secondItem="sXs-T2-2kc" secondAttribute="top" constant="50" id="0g6-b8-Hbz"/>
+                            <constraint firstItem="sXs-T2-2kc" firstAttribute="trailing" secondItem="kyF-by-zxT" secondAttribute="trailing" constant="20" id="1v8-MP-e0F"/>
+                            <constraint firstItem="kyF-by-zxT" firstAttribute="leading" secondItem="sXs-T2-2kc" secondAttribute="leading" constant="20" id="P5N-ho-siE"/>
+                            <constraint firstItem="sXs-T2-2kc" firstAttribute="bottom" secondItem="kyF-by-zxT" secondAttribute="bottom" constant="20" id="Pzz-qY-dGm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="HNl-Jl-F2E"/>
+                    <connections>
+                        <outlet property="description_label" destination="9iA-Wz-Bct" id="Zax-8c-VaJ"/>
+                        <outlet property="title_label" destination="Qqg-NJ-O9m" id="nmC-dH-EaE"/>
+                        <outlet property="video_WebView" destination="JBH-Yw-eny" id="WSr-7K-M0Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GMc-KR-D8V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="760.86956521739137" y="87.723214285714278"/>
         </scene>
     </scenes>
     <resources>

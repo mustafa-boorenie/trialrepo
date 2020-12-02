@@ -18,6 +18,8 @@
 		450DCB7625729C2500C551DE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DCB7525729C2500C551DE /* Model.swift */; };
 		450DCB792572CB9E00C551DE /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DCB782572CB9E00C551DE /* Response.swift */; };
 		450DCB8125741AF100C551DE /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450DCB8025741AF100C551DE /* TableViewCell.swift */; };
+		4558EB2425783CF600B521BE /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4558EB2325783CF600B521BE /* CacheManager.swift */; };
+		4558EB272578442700B521BE /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4558EB262578442700B521BE /* VideoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		450DCB7525729C2500C551DE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		450DCB782572CB9E00C551DE /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		450DCB8025741AF100C551DE /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		4558EB2325783CF600B521BE /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		4558EB262578442700B521BE /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				450DCB5E25728F4800C551DE /* ViewController.swift */,
+				4558EB262578442700B521BE /* VideoViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			children = (
 				450DCB6325728F4B00C551DE /* Assets.xcassets */,
 				450DCB6F25729A1C00C551DE /* Constants.swift */,
+				4558EB2325783CF600B521BE /* CacheManager.swift */,
 			);
 			path = Help;
 			sourceTree = "<group>";
@@ -193,12 +199,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				450DCB5F25728F4800C551DE /* ViewController.swift in Sources */,
+				4558EB2425783CF600B521BE /* CacheManager.swift in Sources */,
 				450DCB8125741AF100C551DE /* TableViewCell.swift in Sources */,
 				450DCB5B25728F4800C551DE /* AppDelegate.swift in Sources */,
 				450DCB5D25728F4800C551DE /* SceneDelegate.swift in Sources */,
 				450DCB7625729C2500C551DE /* Model.swift in Sources */,
 				450DCB7025729A1C00C551DE /* Constants.swift in Sources */,
 				450DCB7325729BAF00C551DE /* Video.swift in Sources */,
+				4558EB272578442700B521BE /* VideoViewController.swift in Sources */,
 				450DCB792572CB9E00C551DE /* Response.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

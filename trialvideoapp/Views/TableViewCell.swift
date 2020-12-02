@@ -41,6 +41,16 @@ import UIKit
             return
         }
         
+        //checks whether the video is cache
+        if let cacheddata = CacheManager.getVideoCache(self.video!.thumbnail) {
+            
+        //takes data from cacheddata
+            self.thumbnail_imageView.image = UIImage(data: cacheddata)
+            return
+        }
+        
+        
+        
         //sets title_label to video title
         self.title_label.text  = video?.title
         
@@ -59,6 +69,10 @@ import UIKit
         
             //checks if error is nil and data is present
             if error == nil || data != nil {
+                
+                
+                //downloads thumbnail onto cache
+                CacheManager.setVideoCache(self.video!.thumbnail, data)
                 
                 if thumbnail_url!.absoluteString != self.video!.thumbnail {
                     //Video cell is no longer equal to video intented to be displayed
